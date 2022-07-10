@@ -24,16 +24,16 @@ function typeWriter() {
     }
 }
 
-function fetchmember() {
+function fetchgithubdata() {
     setTimeout(() => {
-        fetch("https://discord.com/api/guilds/887683619181707276/widget.json").then(t => {
+        fetch("https://api.github.com/users/Kuuuuuuuu").then(t => {
             t.json().then(t => {
-              document.getElementById("count").innerHTML = `Retro Community Online: ${t.presence_count} Members`;
+                document.getElementById("count").innerHTML = `My Github Stats <br>Followers: ${t.followers}<br>Following: ${t.following}<br>Public Repos: ${t.public_repos}`
             });
         });
     }, 100);
 }
 
 setInterval(() => {
-    console.log("ส่องทำควยไร https://github.com/Kuuuuuuuu          #" + Math.random() + 1e3 * Math.random())
+    console.log("#" + Math.random() + 1e3 * Math.random())
 }, 10);
